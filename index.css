@@ -15,7 +15,7 @@ main {
 
 #card {
   background: hsl(216, 50%, 16%);
-  box-shadow: -20px 30px 20px #0a1424, 20px 30px 20px #0a1424;
+  box-shadow: -20px 30px 25px #0a1424, 20px 30px 25px #0a1424;
   border-radius: 20px;
   padding: 25px;
   width: 325px;
@@ -109,6 +109,7 @@ hr {
   font-size: 15px;
   font-weight: 300;
   color: hsl(215, 51%, 70%);
+  line-height: 1.2;
 }
 
 #creator__link {
@@ -120,4 +121,43 @@ hr {
 #creator__link:hover,
 #creator__link:focus {
   color: hsl(178, 100%, 50%);
+}
+
+@media screen and (max-width: 290px) {
+  .component__text {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #card {
+    width: 350px;
+  }
+
+  #card__nft-name {
+    margin-bottom: 18px;
+  }
+
+  #card__nft-description {
+    font-size: 18px;
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+  }
+
+  #value-and-countdown {
+    margin-bottom: 22px;
+  }
+
+  hr {
+    margin-bottom: 18px;
+  }
+
+  #card__creator {
+    margin-bottom: 8px;
+  }
+
+  #creator__attribution {
+    font-size: 16px;
+  }
 }
