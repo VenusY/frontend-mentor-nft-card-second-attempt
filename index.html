@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="index.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>NFT preview card component</title>
+</head>
+<body>
+  <main>
+    <div id="card">
+      <img src="images/image-equilibrium.jpg" alt="NFT image" id="card__nft-image">
+
+      <h1 id="card__nft-name">
+        <a href="#" id="card__nft-link">Equilibrium #3429</a>
+      </h1>
+
+      <p id="card__nft-description">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+    
+      <div id="value-and-countdown">
+        <div class="value-and-countdown__component" id="value">
+          <img src="images/icon-ethereum.svg" alt="ETH icon" class="component__icon" id="value__ethereum-icon">
+          <p class="component__text" id="value__text">0.041 ETH</p>
+        </div>
+
+        <div class="value-and-countdown__component" id="countdown">
+          <img src="images/icon-clock.svg" alt="Clock icon" class="component__icon" id="countdown__clock-icon">
+          <p class="component__text" id="countdown__text">3 days left</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="card__creator">
+        <img src="images/image-avatar.png" alt="Avatar" id="creator__avatar">
+
+        <p id="creator__attribution">
+          Creation of <a href="#" id="creator__link">Jules Wyvern</a>
+        </p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
